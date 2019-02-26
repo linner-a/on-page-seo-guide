@@ -1,0 +1,184 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Courier New;
+  overflow-x: hidden;
+}
+
+#navbar {
+  display: block;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vw;
+  width: 300px;
+  border-right: solid;
+  border-color: salmon; 
+}
+
+header {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 1em;
+  color: salmon;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 6%;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: grey;
+}
+
+.nav-link:hover {
+  color: salmon;
+}
+
+li {
+  margin-top: 17px;
+  font-size: 1.1em;
+}
+
+#main-doc {
+  margin-left: 340px;
+  margin-top: 1em;
+}
+
+#main-doc header {
+  text-align: start;
+}
+
+article {
+  padding-right: 1.5em;
+}
+
+article a {
+  color: salmon;
+}
+
+article ul {
+  font-size: 0.9em;
+  padding-left: 50px;
+  list-style: none;
+}
+
+.li-marker::before {
+  content: "•";
+  color: salmon;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;  
+}
+
+h1, h2, h3 {
+  font-weight: lighter;
+  font-size: 35px;
+}
+
+code {
+  display: flex;
+  flex-direction: column;
+  color: salmon;
+  background: #000;
+  margin-top: -5px;
+  width: 320px;
+}
+
+#multimedia-code {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  color: salmon;
+  background: #000;
+  margin-top: -5px;
+  width: 320px;
+}
+
+#responsive-code {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  color: salmon;
+  background: #000;
+  margin-top: -5px;
+  width: 280px;
+}
+
+@media screen and (max-width: 520px) {
+  
+#navbar {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 530px;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-bottom: solid;
+  border-right: none;
+  border-color: salmon;
+  text-align: center;
+}  
+  
+#main-doc {
+  margin-top: 550px;
+  margin-left: 0px;
+}
+  
+body {
+  font-family: Courier New;
+  font-size: 1.2em;
+}
+  
+article {
+  padding-right: 0em;
+}
+  
+header {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 0em;
+  color: salmon;
+}
+  
+code {
+  display: flex;
+  flex-direction: column;
+  color: salmon;
+  background: #000;
+  margin-top: -5px;
+  width: 100vw;
+}
+  
+ul {
+  list-style: none;
+  padding-inline-start: 0%;
+}
+  
+#multimedia-code {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  color: salmon;
+  background: #000;
+  margin-top: -5px;
+  width: 100vw;
+}
+
+#responsive-code {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  color: salmon;
+  background: #000;
+  margin-top: -5px;
+  width: 100vw;
+}
+}
